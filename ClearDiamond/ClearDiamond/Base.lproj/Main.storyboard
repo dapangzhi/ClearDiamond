@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AcademyEngraved.ttf">
+            <string>AcademyEngravedLetPlain</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9t-Iw-Qqp">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u9t-Iw-Qqp" secondAttribute="height" multiplier="1:1" id="1Mb-H9-Bfe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF4-UA-4Yc">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="游戏结束，您的得分是：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiT-y1-FGH">
+                                        <rect key="frame" x="88" y="23" width="200" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.054053855560000003" green="0.7817966234" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="58" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-6S-LqB">
+                                        <rect key="frame" x="8" y="111" width="359" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="120"/>
+                                        <color key="textColor" red="0.0" green="0.93578825936202914" blue="0.95364207148121827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLA-Le-8hV">
+                                        <rect key="frame" x="88" y="285" width="200" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" red="0.11802248130710903" green="0.40542828500091993" blue="0.74307979060913709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <state key="normal" title="开始游戏">
+                                            <color key="titleColor" red="0.054053855560000003" green="0.7817966234" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="35"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="QYp-7M-etx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79909567636986301" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GF4-UA-4Yc" secondAttribute="height" multiplier="1:1" id="DfC-W6-yes"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NPn-Sz-miq">
+                                <rect key="frame" x="16" y="91" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="3Nr-vf-Com"/>
+                                    <constraint firstAttribute="height" constant="40" id="n7P-rU-iUN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xed-le-BbA">
+                                <rect key="frame" x="293" y="551" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="spd-O5-Emp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="换背景色">
+                                    <color key="titleColor" red="0.054053855560000003" green="0.7817966234" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickCheckBackgroundColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="iDd-H8-uSZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ic1-zD-5XP">
+                                <rect key="frame" x="16" y="551" width="115" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1z8-FF-s4E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="开启瞎狗眼模式">
+                                    <color key="titleColor" red="0.054053855560000003" green="0.7817966234" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickDog" destination="BYZ-38-t0r" eventType="touchUpInside" id="JmD-uB-d7m"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qo7-qL-DVb">
+                                <rect key="frame" x="102" y="101" width="257" height="20"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="xnb-I8-iwx">
+                                        <rect key="frame" x="0.0" y="9" width="257" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="progressTintColor" red="0.0" green="0.79149178520791508" blue="0.80659257909543147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="eBb-ef-MMQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.90090603300000005" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GF4-UA-4Yc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1os-xz-iPh"/>
+                            <constraint firstItem="ic1-zD-5XP" firstAttribute="top" secondItem="u9t-Iw-Qqp" secondAttribute="bottom" constant="30" id="2lz-UF-aCR"/>
+                            <constraint firstItem="xed-le-BbA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="6f2-4F-1qc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qo7-qL-DVb" secondAttribute="trailing" constant="16" id="BJk-sB-bZZ"/>
+                            <constraint firstItem="u9t-Iw-Qqp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E3d-oU-KNq"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NPn-Sz-miq" secondAttribute="trailing" constant="20" symbolic="YES" id="F9F-tB-xVv"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ic1-zD-5XP" secondAttribute="trailing" constant="20" symbolic="YES" id="JWq-XK-c1O"/>
+                            <constraint firstItem="NPn-Sz-miq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="TJq-D7-ZpR"/>
+                            <constraint firstItem="u9t-Iw-Qqp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vs5-vT-HyB"/>
+                            <constraint firstItem="ic1-zD-5XP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="W6m-ge-BSe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xed-le-BbA" secondAttribute="trailing" constant="16" id="bLY-pM-GXO"/>
+                            <constraint firstItem="u9t-Iw-Qqp" firstAttribute="top" secondItem="qo7-qL-DVb" secondAttribute="bottom" constant="25" id="dQr-aF-yRy"/>
+                            <constraint firstItem="u9t-Iw-Qqp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gpB-d5-Kmr"/>
+                            <constraint firstItem="GF4-UA-4Yc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ksB-S3-k2e"/>
+                            <constraint firstItem="qo7-qL-DVb" firstAttribute="leading" secondItem="NPn-Sz-miq" secondAttribute="trailing" constant="16" id="l6c-ub-TaN"/>
+                            <constraint firstItem="xed-le-BbA" firstAttribute="top" secondItem="u9t-Iw-Qqp" secondAttribute="bottom" constant="30" id="mpq-1h-heF"/>
+                            <constraint firstItem="u9t-Iw-Qqp" firstAttribute="top" secondItem="NPn-Sz-miq" secondAttribute="bottom" constant="15" id="qBX-9C-eB4"/>
+                            <constraint firstItem="GF4-UA-4Yc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z2N-Za-Lrf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btDog" destination="ic1-zD-5XP" id="Ucl-gX-fR0"/>
+                        <outlet property="btStartGame" destination="cLA-Le-8hV" id="gsf-sO-n2Z"/>
+                        <outlet property="diamondBox" destination="u9t-Iw-Qqp" id="UC7-F8-WIr"/>
+                        <outlet property="lbGameOverMessage" destination="AiT-y1-FGH" id="H6u-wk-gFC"/>
+                        <outlet property="lbGameOverScore" destination="FJh-6S-LqB" id="VB6-Pq-YPC"/>
+                        <outlet property="lbScore" destination="NPn-Sz-miq" id="qhr-ZB-gYG"/>
+                        <outlet property="progressViewTime" destination="xnb-I8-iwx" id="0XY-LG-sCg"/>
+                        <outlet property="viStartGameBox" destination="GF4-UA-4Yc" id="C78-dj-3NW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
